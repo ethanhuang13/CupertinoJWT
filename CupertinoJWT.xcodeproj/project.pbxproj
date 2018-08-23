@@ -6,29 +6,100 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CCBD060212E7C64009DD9AC /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */;
+			buildPhases = (
+				6CCBD063212E7C6D009DD9AC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CommonCryptoModuleMap;
+			productName = CommonCryptoModuleMap;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		6CCBCFA0212E6444009DD9AC /* CupertinoJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */; };
-		6CCBCFA5212E6444009DD9AC /* CupertinoJWTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFA4212E6444009DD9AC /* CupertinoJWTTests.swift */; };
-		6CCBCFA7212E6445009DD9AC /* CupertinoJWT.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCBCF99212E6444009DD9AC /* CupertinoJWT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CCBCFB1212E6472009DD9AC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
+		6CCBCFB3212E6485009DD9AC /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
+		6CCBCFB5212E6498009DD9AC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB4212E6498009DD9AC /* ASN1.swift */; };
+		6CCBCFB7212E64A8009DD9AC /* ECKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */; };
+		6CCBCFB9212E64B6009DD9AC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */; };
+		6CCBCFBB212E64CB009DD9AC /* CupertinoJWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */; };
+		6CCBCFBD212E64DD009DD9AC /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */; };
+		6CCBD043212E7482009DD9AC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
+		6CCBD044212E7482009DD9AC /* CupertinoJWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */; };
+		6CCBD045212E7482009DD9AC /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */; };
+		6CCBD046212E7482009DD9AC /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
+		6CCBD047212E7482009DD9AC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB4212E6498009DD9AC /* ASN1.swift */; };
+		6CCBD048212E7482009DD9AC /* ECKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */; };
+		6CCBD049212E7482009DD9AC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */; };
+		6CCBD051212E7483009DD9AC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
+		6CCBD052212E7483009DD9AC /* CupertinoJWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */; };
+		6CCBD053212E7483009DD9AC /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */; };
+		6CCBD054212E7483009DD9AC /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
+		6CCBD055212E7483009DD9AC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB4212E6498009DD9AC /* ASN1.swift */; };
+		6CCBD056212E7483009DD9AC /* ECKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */; };
+		6CCBD057212E7483009DD9AC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */; };
+		6CCBD058212E7484009DD9AC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
+		6CCBD059212E7484009DD9AC /* CupertinoJWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */; };
+		6CCBD05A212E7484009DD9AC /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */; };
+		6CCBD05B212E7484009DD9AC /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
+		6CCBD05C212E7484009DD9AC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB4212E6498009DD9AC /* ASN1.swift */; };
+		6CCBD05D212E7484009DD9AC /* ECKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */; };
+		6CCBD05E212E7484009DD9AC /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6CCBCFA1212E6444009DD9AC /* PBXContainerItemProxy */ = {
+		6CCBD064212E7D25009DD9AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CCBCF8D212E6444009DD9AC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6CCBCF95212E6444009DD9AC;
-			remoteInfo = CupertinoJWT;
+			remoteGlobalIDString = 6CCBD05F212E7C63009DD9AC;
+			remoteInfo = CommonCryptoModuleMap;
+		};
+		6CCBD066212E7D2A009DD9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCBCF8D212E6444009DD9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCBD05F212E7C63009DD9AC;
+			remoteInfo = CommonCryptoModuleMap;
+		};
+		6CCBD068212E7D2F009DD9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCBCF8D212E6444009DD9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCBD05F212E7C63009DD9AC;
+			remoteInfo = CommonCryptoModuleMap;
+		};
+		6CCBD06A212E7D34009DD9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCBCF8D212E6444009DD9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCBD05F212E7C63009DD9AC;
+			remoteInfo = CommonCryptoModuleMap;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CCBCF99212E6444009DD9AC /* CupertinoJWT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CupertinoJWT.h; sourceTree = "<group>"; };
-		6CCBCF9A212E6444009DD9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CCBCF9F212E6444009DD9AC /* CupertinoJWTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupertinoJWTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CCBCFA4212E6444009DD9AC /* CupertinoJWTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupertinoJWTTests.swift; sourceTree = "<group>"; };
-		6CCBCFA6212E6444009DD9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCBCF9A212E6444009DD9AC /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		6CCBCFB0212E6472009DD9AC /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		6CCBCFB2212E6485009DD9AC /* P8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P8.swift; sourceTree = "<group>"; };
+		6CCBCFB4212E6498009DD9AC /* ASN1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
+		6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECKeyData.swift; sourceTree = "<group>"; };
+		6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECPrivateKey.swift; sourceTree = "<group>"; };
+		6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupertinoJWTError.swift; sourceTree = "<group>"; };
+		6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		6CCBCFC0212E69D9009DD9AC /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		6CCBCFC1212E69D9009DD9AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CCBCFE5212E721A009DD9AC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCBCFE8212E721A009DD9AC /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		6CCBD01F212E736B009DD9AC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCBD022212E736B009DD9AC /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		6CCBD03B212E73B9009DD9AC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCBD03E212E73B9009DD9AC /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +110,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CCBCF9C212E6444009DD9AC /* Frameworks */ = {
+		6CCBCFE1212E721A009DD9AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CCBCFA0212E6444009DD9AC /* CupertinoJWT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD01B212E736A009DD9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD037212E73B9009DD9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +137,9 @@
 		6CCBCF8C212E6444009DD9AC = {
 			isa = PBXGroup;
 			children = (
-				6CCBCF98212E6444009DD9AC /* CupertinoJWT */,
-				6CCBCFA3212E6444009DD9AC /* CupertinoJWTTests */,
+				6CCBCFC0212E69D9009DD9AC /* CHANGELOG.md */,
+				6CCBCFC1212E69D9009DD9AC /* README.md */,
+				6CCBCF98212E6444009DD9AC /* Source */,
 				6CCBCF97212E6444009DD9AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,27 +148,37 @@
 			isa = PBXGroup;
 			children = (
 				6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */,
-				6CCBCF9F212E6444009DD9AC /* CupertinoJWTTests.xctest */,
+				6CCBCFE5212E721A009DD9AC /* CupertinoJWT.framework */,
+				6CCBD01F212E736B009DD9AC /* CupertinoJWT.framework */,
+				6CCBD03B212E73B9009DD9AC /* CupertinoJWT.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6CCBCF98212E6444009DD9AC /* CupertinoJWT */ = {
+		6CCBCF98212E6444009DD9AC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6CCBCF99212E6444009DD9AC /* CupertinoJWT.h */,
-				6CCBCF9A212E6444009DD9AC /* Info.plist */,
+				6CCBCFDF212E7190009DD9AC /* Supporting Files */,
+				6CCBCFB0212E6472009DD9AC /* JWT.swift */,
+				6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */,
+				6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */,
+				6CCBCFB2212E6485009DD9AC /* P8.swift */,
+				6CCBCFB4212E6498009DD9AC /* ASN1.swift */,
+				6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */,
+				6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */,
 			);
-			path = CupertinoJWT;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		6CCBCFA3212E6444009DD9AC /* CupertinoJWTTests */ = {
+		6CCBCFDF212E7190009DD9AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CCBCFA4212E6444009DD9AC /* CupertinoJWTTests.swift */,
-				6CCBCFA6212E6444009DD9AC /* Info.plist */,
+				6CCBCF9A212E6444009DD9AC /* Info-iOS.plist */,
+				6CCBD022212E736B009DD9AC /* Info-macOS.plist */,
+				6CCBCFE8212E721A009DD9AC /* Info-tvOS.plist */,
+				6CCBD03E212E73B9009DD9AC /* Info-watchOS.plist */,
 			);
-			path = CupertinoJWTTests;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,16 +188,36 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CCBCFA7212E6445009DD9AC /* CupertinoJWT.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBCFE2212E721A009DD9AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD01C212E736A009DD9AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD038212E73B9009DD9AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6CCBCF95212E6444009DD9AC /* CupertinoJWT */ = {
+		6CCBCF95212E6444009DD9AC /* CupertinoJWT iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CCBCFAA212E6445009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT" */;
+			buildConfigurationList = 6CCBCFAA212E6445009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT iOS" */;
 			buildPhases = (
 				6CCBCF91212E6444009DD9AC /* Sources */,
 				6CCBCF92212E6444009DD9AC /* Frameworks */,
@@ -112,29 +227,69 @@
 			buildRules = (
 			);
 			dependencies = (
+				6CCBD065212E7D25009DD9AC /* PBXTargetDependency */,
 			);
-			name = CupertinoJWT;
+			name = "CupertinoJWT iOS";
 			productName = CupertinoJWT;
 			productReference = 6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6CCBCF9E212E6444009DD9AC /* CupertinoJWTTests */ = {
+		6CCBCFE4212E721A009DD9AC /* CupertinoJWT tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CCBCFAD212E6445009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWTTests" */;
+			buildConfigurationList = 6CCBCFF6212E721A009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT tvOS" */;
 			buildPhases = (
-				6CCBCF9B212E6444009DD9AC /* Sources */,
-				6CCBCF9C212E6444009DD9AC /* Frameworks */,
-				6CCBCF9D212E6444009DD9AC /* Resources */,
+				6CCBCFE0212E721A009DD9AC /* Sources */,
+				6CCBCFE1212E721A009DD9AC /* Frameworks */,
+				6CCBCFE2212E721A009DD9AC /* Headers */,
+				6CCBCFE3212E721A009DD9AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6CCBCFA2212E6444009DD9AC /* PBXTargetDependency */,
+				6CCBD069212E7D2F009DD9AC /* PBXTargetDependency */,
 			);
-			name = CupertinoJWTTests;
-			productName = CupertinoJWTTests;
-			productReference = 6CCBCF9F212E6444009DD9AC /* CupertinoJWTTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "CupertinoJWT tvOS";
+			productName = "CupertinoJWT tvOS";
+			productReference = 6CCBCFE5212E721A009DD9AC /* CupertinoJWT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CCBD01E212E736A009DD9AC /* CupertinoJWT macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCBD030212E736B009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT macOS" */;
+			buildPhases = (
+				6CCBD01A212E736A009DD9AC /* Sources */,
+				6CCBD01B212E736A009DD9AC /* Frameworks */,
+				6CCBD01C212E736A009DD9AC /* Headers */,
+				6CCBD01D212E736A009DD9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CCBD067212E7D2A009DD9AC /* PBXTargetDependency */,
+			);
+			name = "CupertinoJWT macOS";
+			productName = "CupertinoJWT macOS";
+			productReference = 6CCBD01F212E736B009DD9AC /* CupertinoJWT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CCBD03A212E73B9009DD9AC /* CupertinoJWT watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCBD040212E73B9009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT watchOS" */;
+			buildPhases = (
+				6CCBD036212E73B9009DD9AC /* Sources */,
+				6CCBD037212E73B9009DD9AC /* Frameworks */,
+				6CCBD038212E73B9009DD9AC /* Headers */,
+				6CCBD039212E73B9009DD9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CCBD06B212E7D34009DD9AC /* PBXTargetDependency */,
+			);
+			name = "CupertinoJWT watchOS";
+			productName = "CupertinoJWT watchOS";
+			productReference = 6CCBD03B212E73B9009DD9AC /* CupertinoJWT.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,8 +303,18 @@
 				TargetAttributes = {
 					6CCBCF95212E6444009DD9AC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
-					6CCBCF9E212E6444009DD9AC = {
+					6CCBCFE4212E721A009DD9AC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6CCBD01E212E736A009DD9AC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6CCBD03A212E73B9009DD9AC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6CCBD05F212E7C63009DD9AC = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -166,8 +331,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CCBCF95212E6444009DD9AC /* CupertinoJWT */,
-				6CCBCF9E212E6444009DD9AC /* CupertinoJWTTests */,
+				6CCBCF95212E6444009DD9AC /* CupertinoJWT iOS */,
+				6CCBD01E212E736A009DD9AC /* CupertinoJWT macOS */,
+				6CCBCFE4212E721A009DD9AC /* CupertinoJWT tvOS */,
+				6CCBD03A212E73B9009DD9AC /* CupertinoJWT watchOS */,
+				6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */,
 			);
 		};
 /* End PBXProject section */
@@ -180,7 +348,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CCBCF9D212E6444009DD9AC /* Resources */ = {
+		6CCBCFE3212E721A009DD9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD01D212E736A009DD9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD039212E73B9009DD9AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,29 +371,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CCBD063212E7C6D009DD9AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/install_common_crypto.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CCBCF91212E6444009DD9AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCBCFBB212E64CB009DD9AC /* CupertinoJWTError.swift in Sources */,
+				6CCBCFBD212E64DD009DD9AC /* Data+Extension.swift in Sources */,
+				6CCBCFB5212E6498009DD9AC /* ASN1.swift in Sources */,
+				6CCBCFB9212E64B6009DD9AC /* ECPrivateKey.swift in Sources */,
+				6CCBCFB7212E64A8009DD9AC /* ECKeyData.swift in Sources */,
+				6CCBCFB1212E6472009DD9AC /* JWT.swift in Sources */,
+				6CCBCFB3212E6485009DD9AC /* P8.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CCBCF9B212E6444009DD9AC /* Sources */ = {
+		6CCBCFE0212E721A009DD9AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CCBCFA5212E6444009DD9AC /* CupertinoJWTTests.swift in Sources */,
+				6CCBD052212E7483009DD9AC /* CupertinoJWTError.swift in Sources */,
+				6CCBD051212E7483009DD9AC /* JWT.swift in Sources */,
+				6CCBD053212E7483009DD9AC /* Data+Extension.swift in Sources */,
+				6CCBD054212E7483009DD9AC /* P8.swift in Sources */,
+				6CCBD057212E7483009DD9AC /* ECPrivateKey.swift in Sources */,
+				6CCBD055212E7483009DD9AC /* ASN1.swift in Sources */,
+				6CCBD056212E7483009DD9AC /* ECKeyData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD01A212E736A009DD9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCBD044212E7482009DD9AC /* CupertinoJWTError.swift in Sources */,
+				6CCBD043212E7482009DD9AC /* JWT.swift in Sources */,
+				6CCBD045212E7482009DD9AC /* Data+Extension.swift in Sources */,
+				6CCBD046212E7482009DD9AC /* P8.swift in Sources */,
+				6CCBD049212E7482009DD9AC /* ECPrivateKey.swift in Sources */,
+				6CCBD047212E7482009DD9AC /* ASN1.swift in Sources */,
+				6CCBD048212E7482009DD9AC /* ECKeyData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCBD036212E73B9009DD9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCBD059212E7484009DD9AC /* CupertinoJWTError.swift in Sources */,
+				6CCBD058212E7484009DD9AC /* JWT.swift in Sources */,
+				6CCBD05A212E7484009DD9AC /* Data+Extension.swift in Sources */,
+				6CCBD05B212E7484009DD9AC /* P8.swift in Sources */,
+				6CCBD05E212E7484009DD9AC /* ECPrivateKey.swift in Sources */,
+				6CCBD05C212E7484009DD9AC /* ASN1.swift in Sources */,
+				6CCBD05D212E7484009DD9AC /* ECKeyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6CCBCFA2212E6444009DD9AC /* PBXTargetDependency */ = {
+		6CCBD065212E7D25009DD9AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CCBCF95212E6444009DD9AC /* CupertinoJWT */;
-			targetProxy = 6CCBCFA1212E6444009DD9AC /* PBXContainerItemProxy */;
+			target = 6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */;
+			targetProxy = 6CCBD064212E7D25009DD9AC /* PBXContainerItemProxy */;
+		};
+		6CCBD067212E7D2A009DD9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */;
+			targetProxy = 6CCBD066212E7D2A009DD9AC /* PBXContainerItemProxy */;
+		};
+		6CCBD069212E7D2F009DD9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */;
+			targetProxy = 6CCBD068212E7D2F009DD9AC /* PBXContainerItemProxy */;
+		};
+		6CCBD06B212E7D34009DD9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */;
+			targetProxy = 6CCBD06A212E7D34009DD9AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -272,7 +526,9 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -328,7 +584,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -339,23 +597,27 @@
 		6CCBCFAB212E6445009DD9AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CupertinoJWT/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWT;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,61 +626,216 @@
 		6CCBCFAC212E6445009DD9AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CupertinoJWT/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWT;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		6CCBCFAE212E6445009DD9AC /* Debug */ = {
+		6CCBCFF7212E721A009DD9AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SE9N6X5V7C;
-				INFOPLIST_FILE = CupertinoJWTTests/Info.plist;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
-		6CCBCFAF212E6445009DD9AC /* Release */ = {
+		6CCBCFF8212E721A009DD9AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SE9N6X5V7C;
-				INFOPLIST_FILE = CupertinoJWTTests/Info.plist;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		6CCBD031212E736B009DD9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6CCBD032212E736B009DD9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		6CCBD041212E73B9009DD9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		6CCBD042212E73B9009DD9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CupertinoJWT;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		6CCBD061212E7C64009DD9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CCBD062212E7C64009DD9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -434,7 +851,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CCBCFAA212E6445009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT" */ = {
+		6CCBCFAA212E6445009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CCBCFAB212E6445009DD9AC /* Debug */,
@@ -443,11 +860,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CCBCFAD212E6445009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWTTests" */ = {
+		6CCBCFF6212E721A009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CCBCFAE212E6445009DD9AC /* Debug */,
-				6CCBCFAF212E6445009DD9AC /* Release */,
+				6CCBCFF7212E721A009DD9AC /* Debug */,
+				6CCBCFF8212E721A009DD9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CCBD030212E736B009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCBD031212E736B009DD9AC /* Debug */,
+				6CCBD032212E736B009DD9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CCBD040212E73B9009DD9AC /* Build configuration list for PBXNativeTarget "CupertinoJWT watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCBD041212E73B9009DD9AC /* Debug */,
+				6CCBD042212E73B9009DD9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CCBD060212E7C64009DD9AC /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCBD061212E7C64009DD9AC /* Debug */,
+				6CCBD062212E7C64009DD9AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

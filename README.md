@@ -17,8 +17,8 @@ Convert Apple's .p8 file to JWT, without third-party dependencies.
 | ✅ | Support iOS, macOS, tvOS, and watchOS |
 | ✅ | Convert Apple's .p8 file to JWT |
 | ✅ | Use Security and CommonCrypto only, no third-party dependencies |
-| ✅ | Support provider-token based APNs |
-| 🏗 | Support Apple Music API |
+| ✅ | Support provider token based APNs connection |
+| 🏗 | Support MusicKit |
 | 🏗 | Support DeviceCheck |
 | 🏗 | Support App Store Connect API |
 
@@ -35,6 +35,35 @@ use_frameworks!
 target 'MyApp' do
     pod 'CupertinoJWT'
 end
+```
+
+## Usage
+
+First, get your key from [Apple Developer site](https://developer.apple.com/account/ios/authkey/). It’s a PEM format .p8 file. It can be use for connecting to [Apple Push Notification service (APNs)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW1), [MusicKit](https://help.apple.com/developer-account/#/devce5522674), [DeviceCheck](https://help.apple.com/developer-account/#/devc3cc013b7) or [App Store Connect API](https://developer.apple.com/videos/play/wwdc2018/303/). You should keep the key safe.
+
+Then, follow the sample code below:
+
+```swift
+// Get content of the .p8 file
+let p8 = """
+-----BEGIN PRIVATE KEY-----
+MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgGH2MylyZjjRdauTk
+xxXW6p8VSHqIeVRRKSJPg1xn6+KgCgYIKoZIzj0DAQehRANCAAS/mNzQ7aBbIBr3
+DiHiJGIDEzi6+q3mmyhH6ZWQWFdFei2qgdyM1V6qtRPVq+yHBNSBebbR4noE/IYO
+hMdWYrKn
+-----END PRIVATE KEY-----
+"""
+
+// Assign developer information and token expiration setting
+let jwt = JWT(keyID: keyID, teamID: teamID, issueDate: Date(), expireDuration: 60 * 60)
+
+do {
+    let token = try jwt.sign(with: p8)
+    // Use the token in the authorization header in your requests connecting to Apple’s API server.
+} catch {
+    // Handle error
+}
+
 ```
 
 ## Contribution

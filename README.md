@@ -30,21 +30,6 @@ target 'MyApp' do
 end
 ```
 
-### Swift Package Manager
-
-You can use [The Swift Package Manager](https://swift.org/package-manager) to install `CupertinoJWT` by adding the proper description to your `Package.swift` file:
-
-```swift
-// swift-tools-version:4.0
-import PackageDescription
-
-let package = Package(
-    name: "YOUR_PROJECT_NAME",
-    dependencies: [
-        .package(url: "https://github.com/ethanhuang13/CupertinoJWT.git", from: "0.1.0"),
-    ]
-)
-```
 Then run `swift build` whenever you get prepared.
 
 ## Contribution

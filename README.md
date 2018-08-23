@@ -1,19 +1,26 @@
 # CupertinoJWT
 
-Convert Apple's P8 file to JWT, without third-party dependencies.
+![GitHub release](https://img.shields.io/github/release/ethanhuang13/CupertinoJWT.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/ethanhuang13/CupertinoJWT.svg)
+![](https://img.shields.io/badge/Platforms-iOS%2010.0%2B%20%7C%20macOS%2010.12%2B%20%7C%20%20tvOS%2010.0%2B%20%7C%20watchOS%203.0%2B-lightgrey.svg)
+[![License](https://img.shields.io/github/license/ethanhuang13/CupertinoJWT.svg)](https://github.com/ethanhuang13/knil/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/badge/Twitter-%40ethanhuang13-blue.svg)](https://twitter.com/ethanhuang13)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ethanhuang13)
+
+Convert Apple's .p8 file to JWT, without third-party dependencies.
 
 ## Features
 
 | | Features |
 | --- | --- |
 | 😇 | Open source iOS project written in Swift 4 |
-| ✅ | Convert Apple's P8 file to JWT |
+| ✅ | Support iOS, macOS, tvOS, and watchOS |
+| ✅ | Convert Apple's .p8 file to JWT |
+| ✅ | Use Security and CommonCrypto only, no third-party dependencies |
 | ✅ | Support provider-token based APNs |
 | 🏗 | Support Apple Music API |
 | 🏗 | Support DeviceCheck |
 | 🏗 | Support App Store Connect API |
-| 🏗 | Use Security and CommonCrypto only, no third-party dependencies |
-| 🏗 | Support iOS, macOS, tvOS, and watchOS |
 
 ## Install
 
@@ -29,8 +36,6 @@ target 'MyApp' do
     pod 'CupertinoJWT'
 end
 ```
-
-Then run `swift build` whenever you get prepared.
 
 ## Contribution
 

@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+- Add tests
+
 ## [v0.1.1] - 2018-08-23
 - Remove SPM support
 - Single target

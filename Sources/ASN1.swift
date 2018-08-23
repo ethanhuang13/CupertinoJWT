@@ -19,7 +19,7 @@ private indirect enum ASN1Element {
 }
 
 extension ASN1 {
-    internal func toECKeyDataPair() throws -> ECKeyData {
+    public func toECKeyData() throws -> ECKeyData {
         let (result, _) = self.toASN1Element()
 
         guard case let ASN1Element.seq(elements: es) = result,
@@ -77,7 +77,7 @@ extension ASN1 {
             let (length, lengthOfLength) = self.advanced(by: 1).readLength()
             var result: Int = 0
             let subdata = self.advanced(by: 1 + lengthOfLength)
-            // ignore negative case!
+            // ignore negative case
             for i in 0..<length {
                 result = 256 * result + Int(subdata[i])
             }

@@ -12,9 +12,9 @@ import CommonCrypto
 public typealias ECPrivateKey = SecKey
 
 extension ECPrivateKey {
-    internal func es256Sign(digest: String) throws -> String {
+    public func es256Sign(digest: String) throws -> String {
         guard let message = digest.data(using: .utf8) else {
-            throw CupertinoJWTError.convertStringToData
+            throw CupertinoJWTError.digestDataCorruption
         }
 
         var hash = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
@@ -25,7 +25,7 @@ extension ECPrivateKey {
 
         guard SecKeyIsAlgorithmSupported(self, .sign, algorithm)
             else {
-                throw CupertinoJWTError.keyNotSupportSign
+                throw CupertinoJWTError.keyNotSupportES256Signing
         }
 
         var error: Unmanaged<CFError>? = nil

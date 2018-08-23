@@ -12,7 +12,7 @@ public typealias P8 = String
 
 extension P8 {
     /// Convert PEM format .p8 file to DER-encoded ASN.1 data
-    internal func toASN1() throws -> ASN1 {
+    public func toASN1() throws -> ASN1 {
         let base64 = self
             .split(separator: "\n")
             .filter({ $0.hasPrefix("-----") == false })

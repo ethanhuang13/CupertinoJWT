@@ -64,6 +64,7 @@
 		6CCBD070212E92CF009DD9AC /* CupertinoJWT Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CupertinoJWT Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBD072212E92CF009DD9AC /* CupertinoJWTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupertinoJWTTests.swift; sourceTree = "<group>"; };
 		6CCBD074212E92CF009DD9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCBD09A212EA614009DD9AC /* CupertinoJWT.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CupertinoJWT.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 			children = (
 				6CCBCFC0212E69D9009DD9AC /* CHANGELOG.md */,
 				6CCBCFC1212E69D9009DD9AC /* README.md */,
+				6CCBD09A212EA614009DD9AC /* CupertinoJWT.podspec */,
 				6CCBCF98212E6444009DD9AC /* Sources */,
 				6CCBD071212E92CF009DD9AC /* Tests */,
 				6CCBCF97212E6444009DD9AC /* Products */,
@@ -108,14 +110,14 @@
 		6CCBCF98212E6444009DD9AC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6CCBCFDF212E7190009DD9AC /* Supporting Files */,
 				6CCBCFB0212E6472009DD9AC /* JWT.swift */,
 				6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */,
-				6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */,
 				6CCBCFB2212E6485009DD9AC /* P8.swift */,
 				6CCBCFB4212E6498009DD9AC /* ASN1.swift */,
 				6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */,
 				6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */,
+				6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */,
+				6CCBCFDF212E7190009DD9AC /* Supporting Files */,
 			);
 			path = Sources;
 			sourceTree = "<group>";

@@ -9,8 +9,7 @@
 import Foundation
 
 public struct JWT: Codable {
-
-    struct Header: Codable {
+    private struct Header: Codable {
         /// alg
         let algorithm: String = "ES256"
 
@@ -23,7 +22,7 @@ public struct JWT: Codable {
         }
     }
 
-    struct Payload: Codable {
+    private struct Payload: Codable {
         /// iss
         public let teamID: String
 
@@ -55,7 +54,6 @@ public struct JWT: Codable {
     }
 
     /// Combine header and payload as digest for signing.
-
     public func digest() throws -> String {
         let headerString = try JSONEncoder().encode(header.self).base64EncodedURLString()
         let payloadString = try JSONEncoder().encode(payload.self).base64EncodedURLString()
@@ -63,12 +61,11 @@ public struct JWT: Codable {
     }
 
     /// Sign digest with P8(PEM) string. Use the result in your request authorization header.
-
     public func sign(with p8: P8) throws -> String {
         let digest = try self.digest()
 
         let signature = try p8.toASN1()
-            .toECKeyDataPair()
+            .toECKeyData()
             .toPrivateKey()
             .es256Sign(digest: digest)
 

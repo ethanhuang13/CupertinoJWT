@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "CupertinoJWT"
-  s.version     = "0.1.1"
+  s.version     = "0.1.2"
   s.summary     = "Convert Apple's .p8 file to JWT, without third-party dependencies"
   s.homepage    = "https://github.com/ethanhuang13/CupertinoJWT"
   s.license     = { :type => "MIT" }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.12"
   s.tvos.deployment_target = "10.0"
   s.watchos.deployment_target = "3.0"
-  s.source = { :git => "https://github.com/ethanhuang13/CupertinoJWT.git", :tag => s.version }
+  s.source = { :git => "https://github.com/ethanhuang13/CupertinoJWT.git", :tag => "v#{s.version}" }
   s.source_files = "Sources/*.swift"
   s.resource = "install_common_crypto.sh"
   s.script_phase = { :name => 'CommonCrypto', :script => 'sh ${PODS_TARGET_SRCROOT}/install_common_crypto.sh', :execution_position => :before_compile }

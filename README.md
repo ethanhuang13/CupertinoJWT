@@ -7,7 +7,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-%40ethanhuang13-blue.svg)](https://twitter.com/ethanhuang13)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ethanhuang13)
 
-Parse Apple's .p8 private key file and sign [JWT](https://jwt.io), without third-party dependencies.
+Parse Apple's `.p8` private key file and sign [JWT](https://jwt.io), without third-party dependencies.
 
 ## Features
 
@@ -56,11 +56,11 @@ The result is, with CupertinoJWT, we can easily create developer tools on iOS (a
 
 ## What does CupertinoJWT do?
 
-The private keys provided by Apple are PEM format .p8 files. CupertinoJWT parses and convert them to ASN.1 data, retrieve the private keys, loads with SecKeyCreateWithData method, and finally create signature using SecKeyCreateSignature method.
+The private keys provided by Apple are PEM format `.p8` files. CupertinoJWT parses and convert them to ASN.1 data, retrieve the private keys, loads with `SecKeyCreateWithData` method, and finally create signature using `SecKeyCreateSignature` method.
 
 ## Usage
 
-First, get your .p8 key file from [Apple Developer site](https://developer.apple.com/account/ios/authkey/). It can be download once. Keep the file safe. (As a developer, you should know the importance for keeping the private keys safe.)
+First, get your `.p8` key file from [Apple Developer site](https://developer.apple.com/account/ios/authkey/). It can be download once. Keep the file safe. (As a developer, you should know the importance for keeping the private keys safe.)
 
 Then, follow the sample code below:
 
@@ -81,6 +81,7 @@ let jwt = JWT(keyID: keyID, teamID: teamID, issueDate: Date(), expireDuration: 6
 do {
     let token = try jwt.sign(with: p8)
     // Use the token in the authorization header in your requests connecting to Apple’s API server.
+    // e.g. urlRequest.addValue(_ value: "bearer \(token)", forHTTPHeaderField field: "authorization")
 } catch {
     // Handle error
 }

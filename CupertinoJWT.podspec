@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = "CupertinoJWT"
-  s.version     = "0.1.2"
-  s.summary     = "Convert Apple's .p8 file to JWT, without third-party dependencies"
+  s.version     = "0.2.0"
+  s.summary     = "Parse Apple's .p8 private key file and sign JWT with ES256, without third-party dependencies."
   s.homepage    = "https://github.com/ethanhuang13/CupertinoJWT"
   s.license     = { :type => "MIT" }
   s.authors     = { "ethanhuang13" => "blesserx@gmail.com" }

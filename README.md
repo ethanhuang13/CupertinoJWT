@@ -7,7 +7,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-%40ethanhuang13-blue.svg)](https://twitter.com/ethanhuang13)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ethanhuang13)
 
-Parse Apple's `.p8` private key file and sign [JWT](https://jwt.io), without third-party dependencies.
+Parse Apple's `.p8` private key file and sign [JWT](https://jwt.io) with ES256, without third-party dependencies. Supports Apple's server-side APIs.
 
 ## Features
 

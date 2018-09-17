@@ -39,6 +39,28 @@ extension ASN1 {
         return keyData
     }
 
+    // SecKeyCreateSignature seems to sometimes return a leading zero; strip it out
+    private func dropLeadingBytes() -> Data {
+        if self.count == 33 {
+            return self.dropFirst()
+        }
+        return self
+    }
+
+    /// Convert an ASN.1 format EC signature returned by commoncrypto into a raw 64bit signature
+    public func toRawSignature() throws -> Data {
+        let (result, _) = self.toASN1Element()
+
+        guard case let ASN1Element.seq(elements: es) = result,
+            case let ASN1Element.bytes(data: sigR) = es[0],
+            case let ASN1Element.bytes(data: sigS) = es[1] else {
+                throw CupertinoJWTError.invalidAsn1
+        }
+
+        let rawSig =  sigR.dropLeadingBytes() + sigS.dropLeadingBytes()
+        return rawSig
+    }
+
     private func readLength() -> (Int, Int) {
         if self[0] & 0x80 == 0x00 { // short form
             return (Int(self[0]), 1)
@@ -75,13 +97,18 @@ extension ASN1 {
 
         case 0x02: // integer
             let (length, lengthOfLength) = self.advanced(by: 1).readLength()
-            var result: Int = 0
-            let subdata = self.advanced(by: 1 + lengthOfLength)
-            // ignore negative case
-            for i in 0..<length {
-                result = 256 * result + Int(subdata[i])
+            if (length < 8) {
+                var result: Int = 0
+                let subdata = self.advanced(by: 1 + lengthOfLength)
+                // ignore negative case
+                for i in 0..<length {
+                    result = 256 * result + Int(subdata[i])
+                }
+                return (.integer(int: result), 1 + lengthOfLength + length)
             }
-            return (.integer(int: result), 1 + lengthOfLength + length)
+            // number is too large to fit in Int; return the bytes
+            return (.bytes(data: self.subdata(in: (1 + lengthOfLength) ..< (1 + lengthOfLength + length))), 1 + lengthOfLength + length)
+
 
         case let s where (s & 0xe0) == 0xa0: // constructed
             let tag = Int(s & 0x1f)

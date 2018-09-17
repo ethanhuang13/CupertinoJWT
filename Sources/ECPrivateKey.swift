@@ -34,6 +34,8 @@ extension ECPrivateKey {
             throw error!.takeRetainedValue()
         }
 
-        return (signature as Data).base64EncodedURLString()
+        let rawSignature = try (signature as ASN1).toRawSignature()
+
+        return rawSignature.base64EncodedURLString()
     }
 }

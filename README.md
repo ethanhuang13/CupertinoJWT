@@ -40,6 +40,24 @@ end
 
 If you see CocoaPods warning about script phase, it is because CupertinoJWT requires CommonCrypto framework. And Apple didn't expose its header for Swift until Xcode 10. We use the script phase to generate module map to use it in Swift.
 
+### Carthage
+
+[Carthage][] is a simple, decentralized dependency manager for Cocoa. To install CupertinoJWT with Carthage:
+
+ 1. Make sure Carthage is [installed][Carthage Installation].
+
+ 2. Update your `Cartfile` to include the following:
+
+```ruby
+github "ethanhuang13/CupertinoJWT"
+```
+
+ 3. Run `carthage update` and [add the appropriate framework][Carthage Usage].
+
+[Carthage]: https://github.com/Carthage/Carthage
+[Carthage Installation]: https://github.com/Carthage/Carthage#installing-carthage
+[Carthage Usage]: https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
+
 ## What's this all about?
 
 Apple has several server APIs uses JSON Web Token([JWT](https://jwt.io)) as authentication method, including [Apple Push Notification service (APNs)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW1), [MusicKit](https://help.apple.com/developer-account/#/devce5522674), [DeviceCheck](https://help.apple.com/developer-account/#/devc3cc013b7) and [App Store Connect API](https://developer.apple.com/videos/play/wwdc2018/303/). Probably more in the future.

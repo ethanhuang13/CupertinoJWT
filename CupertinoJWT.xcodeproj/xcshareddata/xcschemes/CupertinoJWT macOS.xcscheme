@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CCBCF95212E6444009DD9AC"
+               BlueprintIdentifier = "3D1E18C721B6BFB80073A4FC"
                BuildableName = "CupertinoJWT.framework"
-               BlueprintName = "CupertinoJWT"
+               BlueprintName = "CupertinoJWT macOS"
                ReferencedContainer = "container:CupertinoJWT.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CCBD06F212E92CF009DD9AC"
-               BuildableName = "CupertinoJWT Tests.xctest"
-               BlueprintName = "CupertinoJWT Tests"
-               ReferencedContainer = "container:CupertinoJWT.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CCBCF95212E6444009DD9AC"
-            BuildableName = "CupertinoJWT.framework"
-            BlueprintName = "CupertinoJWT"
-            ReferencedContainer = "container:CupertinoJWT.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CCBCF95212E6444009DD9AC"
+            BlueprintIdentifier = "3D1E18C721B6BFB80073A4FC"
             BuildableName = "CupertinoJWT.framework"
-            BlueprintName = "CupertinoJWT"
+            BlueprintName = "CupertinoJWT macOS"
             ReferencedContainer = "container:CupertinoJWT.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6CCBCF95212E6444009DD9AC"
+            BlueprintIdentifier = "3D1E18C721B6BFB80073A4FC"
             BuildableName = "CupertinoJWT.framework"
-            BlueprintName = "CupertinoJWT"
+            BlueprintName = "CupertinoJWT macOS"
             ReferencedContainer = "container:CupertinoJWT.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

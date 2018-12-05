@@ -93,8 +93,8 @@
 
 /* Begin PBXFileReference section */
 		3D1E18D821B6BFB80073A4FC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D244D9C21B82C0000907D0B /* CupertinoJWT watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "CupertinoJWT watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D244DAF21B82CE200907D0B /* CupertinoJWT tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "CupertinoJWT tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D244D9C21B82C0000907D0B /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D244DAF21B82CE200907D0B /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCF9A212E6444009DD9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCBCFB0212E6472009DD9AC /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
@@ -170,8 +170,8 @@
 				6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */,
 				6CCBD070212E92CF009DD9AC /* CupertinoJWT Tests.xctest */,
 				3D1E18D821B6BFB80073A4FC /* CupertinoJWT.framework */,
-				3D244D9C21B82C0000907D0B /* CupertinoJWT watchOS.framework */,
-				3D244DAF21B82CE200907D0B /* CupertinoJWT tvOS.framework */,
+				3D244D9C21B82C0000907D0B /* CupertinoJWT.framework */,
+				3D244DAF21B82CE200907D0B /* CupertinoJWT.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			);
 			name = "CupertinoJWT watchOS";
 			productName = CupertinoJWT;
-			productReference = 3D244D9C21B82C0000907D0B /* CupertinoJWT watchOS.framework */;
+			productReference = 3D244D9C21B82C0000907D0B /* CupertinoJWT.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3D244D9E21B82CE200907D0B /* CupertinoJWT tvOS */ = {
@@ -296,7 +296,7 @@
 			);
 			name = "CupertinoJWT tvOS";
 			productName = CupertinoJWT;
-			productReference = 3D244DAF21B82CE200907D0B /* CupertinoJWT tvOS.framework */;
+			productReference = 3D244DAF21B82CE200907D0B /* CupertinoJWT.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6CCBCF95212E6444009DD9AC /* CupertinoJWT iOS */ = {
@@ -611,8 +611,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWT;
+				PRODUCT_NAME = CupertinoJWT;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -642,8 +642,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWT;
+				PRODUCT_NAME = CupertinoJWT;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -672,8 +672,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWT;
+				PRODUCT_NAME = CupertinoJWT;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -703,8 +703,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWT;
+				PRODUCT_NAME = CupertinoJWT;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";

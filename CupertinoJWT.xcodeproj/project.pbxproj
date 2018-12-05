@@ -28,6 +28,13 @@
 		3D1E18CF21B6BFB80073A4FC /* ECKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */; };
 		3D1E18D021B6BFB80073A4FC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
 		3D1E18D121B6BFB80073A4FC /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
+		3D244D8F21B82C0000907D0B /* CupertinoJWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBA212E64CB009DD9AC /* CupertinoJWTError.swift */; };
+		3D244D9021B82C0000907D0B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFBC212E64DD009DD9AC /* Data+Extension.swift */; };
+		3D244D9121B82C0000907D0B /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB4212E6498009DD9AC /* ASN1.swift */; };
+		3D244D9221B82C0000907D0B /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB8212E64B6009DD9AC /* ECPrivateKey.swift */; };
+		3D244D9321B82C0000907D0B /* ECKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB6212E64A8009DD9AC /* ECKeyData.swift */; };
+		3D244D9421B82C0000907D0B /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
+		3D244D9521B82C0000907D0B /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
 		6CCBCFB1212E6472009DD9AC /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB0212E6472009DD9AC /* JWT.swift */; };
 		6CCBCFB3212E6485009DD9AC /* P8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB2212E6485009DD9AC /* P8.swift */; };
 		6CCBCFB5212E6498009DD9AC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCBCFB4212E6498009DD9AC /* ASN1.swift */; };
@@ -41,6 +48,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		3D1E18C921B6BFB80073A4FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCBCF8D212E6444009DD9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCBD05F212E7C63009DD9AC;
+			remoteInfo = CommonCryptoModuleMap;
+		};
+		3D244D8D21B82C0000907D0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CCBCF8D212E6444009DD9AC /* Project object */;
 			proxyType = 1;
@@ -65,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		3D1E18D821B6BFB80073A4FC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D244D9C21B82C0000907D0B /* CupertinoJWT watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "CupertinoJWT watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CupertinoJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCBCF9A212E6444009DD9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCBCFB0212E6472009DD9AC /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
@@ -84,6 +99,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D1E18D221B6BFB80073A4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D244D9621B82C0000907D0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,6 +148,7 @@
 				6CCBCF96212E6444009DD9AC /* CupertinoJWT.framework */,
 				6CCBD070212E92CF009DD9AC /* CupertinoJWT Tests.xctest */,
 				3D1E18D821B6BFB80073A4FC /* CupertinoJWT.framework */,
+				3D244D9C21B82C0000907D0B /* CupertinoJWT watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +195,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D244D9721B82C0000907D0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CCBCF93212E6444009DD9AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +229,25 @@
 			name = "CupertinoJWT macOS";
 			productName = CupertinoJWT;
 			productReference = 3D1E18D821B6BFB80073A4FC /* CupertinoJWT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D244D8B21B82C0000907D0B /* CupertinoJWT watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D244D9921B82C0000907D0B /* Build configuration list for PBXNativeTarget "CupertinoJWT watchOS" */;
+			buildPhases = (
+				3D244D8E21B82C0000907D0B /* Sources */,
+				3D244D9621B82C0000907D0B /* Frameworks */,
+				3D244D9721B82C0000907D0B /* Headers */,
+				3D244D9821B82C0000907D0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D244D8C21B82C0000907D0B /* PBXTargetDependency */,
+			);
+			name = "CupertinoJWT watchOS";
+			productName = CupertinoJWT;
+			productReference = 3D244D9C21B82C0000907D0B /* CupertinoJWT watchOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6CCBCF95212E6444009DD9AC /* CupertinoJWT iOS */ = {
@@ -276,12 +325,20 @@
 				6CCBD06F212E92CF009DD9AC /* CupertinoJWT Tests */,
 				6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */,
 				3D1E18C721B6BFB80073A4FC /* CupertinoJWT macOS */,
+				3D244D8B21B82C0000907D0B /* CupertinoJWT watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3D1E18D421B6BFB80073A4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D244D9821B82C0000907D0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,6 +392,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D244D8E21B82C0000907D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D244D8F21B82C0000907D0B /* CupertinoJWTError.swift in Sources */,
+				3D244D9021B82C0000907D0B /* Data+Extension.swift in Sources */,
+				3D244D9121B82C0000907D0B /* ASN1.swift in Sources */,
+				3D244D9221B82C0000907D0B /* ECPrivateKey.swift in Sources */,
+				3D244D9321B82C0000907D0B /* ECKeyData.swift in Sources */,
+				3D244D9421B82C0000907D0B /* JWT.swift in Sources */,
+				3D244D9521B82C0000907D0B /* P8.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CCBCF91212E6444009DD9AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +435,11 @@
 			isa = PBXTargetDependency;
 			target = 6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */;
 			targetProxy = 3D1E18C921B6BFB80073A4FC /* PBXContainerItemProxy */;
+		};
+		3D244D8C21B82C0000907D0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCBD05F212E7C63009DD9AC /* CommonCryptoModuleMap */;
+			targetProxy = 3D244D8D21B82C0000907D0B /* PBXContainerItemProxy */;
 		};
 		6CCBD065212E7D25009DD9AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -434,6 +510,67 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D244D9A21B82C0000907D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D244D9B21B82C0000907D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elaborapp.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -684,6 +821,15 @@
 			buildConfigurations = (
 				3D1E18D621B6BFB80073A4FC /* Debug */,
 				3D1E18D721B6BFB80073A4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D244D9921B82C0000907D0B /* Build configuration list for PBXNativeTarget "CupertinoJWT watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D244D9A21B82C0000907D0B /* Debug */,
+				3D244D9B21B82C0000907D0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

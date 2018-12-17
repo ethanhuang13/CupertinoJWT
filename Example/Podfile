@@ -1,0 +1,13 @@
+use_frameworks!
+
+target 'CupertinoJWTExample' do
+	platform :ios, '10.0'
+
+    pod 'CupertinoJWT'
+end
+
+target 'CupertinoJWTExampleWatchOS Extension' do
+	platform :watchos, '3.0'
+	
+    pod 'CupertinoJWT'
+end

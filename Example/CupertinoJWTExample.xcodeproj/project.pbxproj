@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C9126C721C745CD00C1C543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9126C621C745CD00C1C543 /* AppDelegate.swift */; };
+		6C9126C921C745CD00C1C543 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9126C821C745CD00C1C543 /* ViewController.swift */; };
+		6C9126CC21C745CD00C1C543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9126CA21C745CD00C1C543 /* Main.storyboard */; };
+		6C9126CE21C745CF00C1C543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9126CD21C745CF00C1C543 /* Assets.xcassets */; };
+		6C9126D121C745CF00C1C543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9126CF21C745CF00C1C543 /* LaunchScreen.storyboard */; };
+		6C9126DE21C747DC00C1C543 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9126DC21C747DC00C1C543 /* Interface.storyboard */; };
+		6C9126E021C747DD00C1C543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9126DF21C747DD00C1C543 /* Assets.xcassets */; };
+		6C9126E721C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C9126E621C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C9126EC21C747DD00C1C543 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9126EB21C747DD00C1C543 /* InterfaceController.swift */; };
+		6C9126EE21C747DD00C1C543 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9126ED21C747DD00C1C543 /* ExtensionDelegate.swift */; };
+		6C9126F021C747DE00C1C543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9126EF21C747DE00C1C543 /* Assets.xcassets */; };
+		6C9126F421C747DE00C1C543 /* CupertinoJWTExampleWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6C9126DA21C747DC00C1C543 /* CupertinoJWTExampleWatchOS.app */; };
+		6C91270221C749EB00C1C543 /* CupertinoJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C91270121C749EB00C1C543 /* CupertinoJWT.framework */; };
+		6C91270421C749F500C1C543 /* CupertinoJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C91270321C749F500C1C543 /* CupertinoJWT.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C9126E821C747DD00C1C543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C9126BB21C745CD00C1C543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C9126E521C747DD00C1C543;
+			remoteInfo = "CupertinoJWTExampleWatchOS Extension";
+		};
+		6C9126F221C747DE00C1C543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C9126BB21C745CD00C1C543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C9126D921C747DC00C1C543;
+			remoteInfo = CupertinoJWTExampleWatchOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C9126FA21C747DE00C1C543 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C9126E721C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9126FC21C747DE00C1C543 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6C9126F421C747DE00C1C543 /* CupertinoJWTExampleWatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C9126C321C745CD00C1C543 /* CupertinoJWTExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupertinoJWTExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9126C621C745CD00C1C543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C9126C821C745CD00C1C543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C9126CB21C745CD00C1C543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C9126CD21C745CF00C1C543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C9126D021C745CF00C1C543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C9126D221C745CF00C1C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9126DA21C747DC00C1C543 /* CupertinoJWTExampleWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupertinoJWTExampleWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9126DD21C747DC00C1C543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6C9126DF21C747DD00C1C543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C9126E121C747DD00C1C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9126E621C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CupertinoJWTExampleWatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9126EB21C747DD00C1C543 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6C9126ED21C747DD00C1C543 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6C9126EF21C747DE00C1C543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C9126F121C747DE00C1C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C91270121C749EB00C1C543 /* CupertinoJWT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CupertinoJWT.framework; path = Carthage/Build/iOS/CupertinoJWT.framework; sourceTree = "<group>"; };
+		6C91270321C749F500C1C543 /* CupertinoJWT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CupertinoJWT.framework; path = Carthage/Build/watchOS/CupertinoJWT.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C9126C021C745CD00C1C543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C91270221C749EB00C1C543 /* CupertinoJWT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9126E321C747DD00C1C543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C91270421C749F500C1C543 /* CupertinoJWT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C7652194CBFD0CBAF1AAC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C9126BA21C745CD00C1C543 = {
+			isa = PBXGroup;
+			children = (
+				6C9126C521C745CD00C1C543 /* CupertinoJWTExample */,
+				6C9126DB21C747DC00C1C543 /* CupertinoJWTExampleWatchOS */,
+				6C9126EA21C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension */,
+				6C9126C421C745CD00C1C543 /* Products */,
+				6C91270021C749EB00C1C543 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C9126C421C745CD00C1C543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C9126C321C745CD00C1C543 /* CupertinoJWTExample.app */,
+				6C9126DA21C747DC00C1C543 /* CupertinoJWTExampleWatchOS.app */,
+				6C9126E621C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C9126C521C745CD00C1C543 /* CupertinoJWTExample */ = {
+			isa = PBXGroup;
+			children = (
+				6C9126C621C745CD00C1C543 /* AppDelegate.swift */,
+				6C9126C821C745CD00C1C543 /* ViewController.swift */,
+				6C9126CA21C745CD00C1C543 /* Main.storyboard */,
+				6C9126CD21C745CF00C1C543 /* Assets.xcassets */,
+				6C9126CF21C745CF00C1C543 /* LaunchScreen.storyboard */,
+				6C9126D221C745CF00C1C543 /* Info.plist */,
+			);
+			path = CupertinoJWTExample;
+			sourceTree = "<group>";
+		};
+		6C9126DB21C747DC00C1C543 /* CupertinoJWTExampleWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				6C9126DC21C747DC00C1C543 /* Interface.storyboard */,
+				6C9126DF21C747DD00C1C543 /* Assets.xcassets */,
+				6C9126E121C747DD00C1C543 /* Info.plist */,
+			);
+			path = CupertinoJWTExampleWatchOS;
+			sourceTree = "<group>";
+		};
+		6C9126EA21C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C9126EB21C747DD00C1C543 /* InterfaceController.swift */,
+				6C9126ED21C747DD00C1C543 /* ExtensionDelegate.swift */,
+				6C9126EF21C747DE00C1C543 /* Assets.xcassets */,
+				6C9126F121C747DE00C1C543 /* Info.plist */,
+			);
+			path = "CupertinoJWTExampleWatchOS Extension";
+			sourceTree = "<group>";
+		};
+		6C91270021C749EB00C1C543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C91270321C749F500C1C543 /* CupertinoJWT.framework */,
+				6C91270121C749EB00C1C543 /* CupertinoJWT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C9126C221C745CD00C1C543 /* CupertinoJWTExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C9126D521C745CF00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExample" */;
+			buildPhases = (
+				6C9126BF21C745CD00C1C543 /* Sources */,
+				6C9126C021C745CD00C1C543 /* Frameworks */,
+				6C9126C121C745CD00C1C543 /* Resources */,
+				6C9126FC21C747DE00C1C543 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C9126F321C747DE00C1C543 /* PBXTargetDependency */,
+			);
+			name = CupertinoJWTExample;
+			productName = CupertinoJWTExample;
+			productReference = 6C9126C321C745CD00C1C543 /* CupertinoJWTExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C9126D921C747DC00C1C543 /* CupertinoJWTExampleWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C9126FB21C747DE00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExampleWatchOS" */;
+			buildPhases = (
+				6C9126D821C747DC00C1C543 /* Resources */,
+				6C9126FA21C747DE00C1C543 /* Embed App Extensions */,
+				87C7652194CBFD0CBAF1AAC4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C9126E921C747DD00C1C543 /* PBXTargetDependency */,
+			);
+			name = CupertinoJWTExampleWatchOS;
+			productName = CupertinoJWTExampleWatchOS;
+			productReference = 6C9126DA21C747DC00C1C543 /* CupertinoJWTExampleWatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6C9126E521C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C9126F921C747DE00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExampleWatchOS Extension" */;
+			buildPhases = (
+				6C9126E221C747DD00C1C543 /* Sources */,
+				6C9126E321C747DD00C1C543 /* Frameworks */,
+				6C9126E421C747DD00C1C543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CupertinoJWTExampleWatchOS Extension";
+			productName = "CupertinoJWTExampleWatchOS Extension";
+			productReference = 6C9126E621C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C9126BB21C745CD00C1C543 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Elaborapp Co., Ltd.";
+				TargetAttributes = {
+					6C9126C221C745CD00C1C543 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6C9126D921C747DC00C1C543 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6C9126E521C747DD00C1C543 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6C9126BE21C745CD00C1C543 /* Build configuration list for PBXProject "CupertinoJWTExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C9126BA21C745CD00C1C543;
+			productRefGroup = 6C9126C421C745CD00C1C543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C9126C221C745CD00C1C543 /* CupertinoJWTExample */,
+				6C9126D921C747DC00C1C543 /* CupertinoJWTExampleWatchOS */,
+				6C9126E521C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C9126C121C745CD00C1C543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9126D121C745CF00C1C543 /* LaunchScreen.storyboard in Resources */,
+				6C9126CE21C745CF00C1C543 /* Assets.xcassets in Resources */,
+				6C9126CC21C745CD00C1C543 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9126D821C747DC00C1C543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9126E021C747DD00C1C543 /* Assets.xcassets in Resources */,
+				6C9126DE21C747DC00C1C543 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9126E421C747DD00C1C543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9126F021C747DE00C1C543 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C9126BF21C745CD00C1C543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9126C921C745CD00C1C543 /* ViewController.swift in Sources */,
+				6C9126C721C745CD00C1C543 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C9126E221C747DD00C1C543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9126EE21C747DD00C1C543 /* ExtensionDelegate.swift in Sources */,
+				6C9126EC21C747DD00C1C543 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C9126E921C747DD00C1C543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C9126E521C747DD00C1C543 /* CupertinoJWTExampleWatchOS Extension */;
+			targetProxy = 6C9126E821C747DD00C1C543 /* PBXContainerItemProxy */;
+		};
+		6C9126F321C747DE00C1C543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C9126D921C747DC00C1C543 /* CupertinoJWTExampleWatchOS */;
+			targetProxy = 6C9126F221C747DE00C1C543 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C9126CA21C745CD00C1C543 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C9126CB21C745CD00C1C543 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C9126CF21C745CF00C1C543 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C9126D021C745CF00C1C543 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6C9126DC21C747DC00C1C543 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C9126DD21C747DC00C1C543 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C9126D321C745CF00C1C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C9126D421C745CF00C1C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C9126D621C745CF00C1C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CupertinoJWTExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C9126D721C745CF00C1C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = CupertinoJWTExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C9126F521C747DE00C1C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				IBSC_MODULE = CupertinoJWTExampleWatchOS_Extension;
+				INFOPLIST_FILE = CupertinoJWTExampleWatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		6C9126F621C747DE00C1C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				IBSC_MODULE = CupertinoJWTExampleWatchOS_Extension;
+				INFOPLIST_FILE = CupertinoJWTExampleWatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		6C9126F721C747DE00C1C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "CupertinoJWTExampleWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		6C9126F821C747DE00C1C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE9N6X5V7C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "CupertinoJWTExampleWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elaborapp.CupertinoJWTExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C9126BE21C745CD00C1C543 /* Build configuration list for PBXProject "CupertinoJWTExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C9126D321C745CF00C1C543 /* Debug */,
+				6C9126D421C745CF00C1C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C9126D521C745CF00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C9126D621C745CF00C1C543 /* Debug */,
+				6C9126D721C745CF00C1C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C9126F921C747DE00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExampleWatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C9126F721C747DE00C1C543 /* Debug */,
+				6C9126F821C747DE00C1C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C9126FB21C747DE00C1C543 /* Build configuration list for PBXNativeTarget "CupertinoJWTExampleWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C9126F521C747DE00C1C543 /* Debug */,
+				6C9126F621C747DE00C1C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C9126BB21C745CD00C1C543 /* Project object */;
+}

@@ -15,10 +15,12 @@ public struct JWT: Codable {
 
         /// kid
         let keyID: String
+        let typ: String = "JWT"
 
         enum CodingKeys: String, CodingKey {
             case algorithm = "alg"
             case keyID = "kid"
+            case typ
         }
     }
 
@@ -26,15 +28,15 @@ public struct JWT: Codable {
         /// iss
         public let teamID: String
 
-        /// iat
-        public let issueDate: Int
+        /// Audience
+        public let audience: String = "appstoreconnect-v1"
 
         /// exp
         public let expireDate: Int
 
         enum CodingKeys: String, CodingKey {
             case teamID = "iss"
-            case issueDate = "iat"
+            case audience = "aud"
             case expireDate = "exp"
         }
     }
@@ -50,14 +52,17 @@ public struct JWT: Codable {
         let iat = Int(issueDate.timeIntervalSince1970.rounded())
         let exp = iat + Int(expireDuration)
 
-        payload = Payload(teamID: teamID, issueDate: iat, expireDate: exp)
+        payload = Payload(teamID: teamID, expireDate: exp)
     }
 
     /// Combine header and payload as digest for signing.
     public func digest() throws -> String {
-        let headerString = try JSONEncoder().encode(header.self).base64EncodedURLString()
-        let payloadString = try JSONEncoder().encode(payload.self).base64EncodedURLString()
-        return "\(headerString).\(payloadString)"
+        let headerString = try JSONEncoder().encode(header.self)
+        let headerBase64 = headerString.base64EncodedURLString()
+        let payloadString = try JSONEncoder().encode(payload.self)
+        let payloadBase64 = payloadString.base64EncodedURLString()
+        
+        return "\(headerBase64).\(payloadBase64)"
     }
 
     /// Sign digest with P8(PEM) string. Use the result in your request authorization header.

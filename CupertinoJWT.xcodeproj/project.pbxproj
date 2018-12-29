@@ -348,6 +348,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Elaborapp Co., Ltd.";
 				TargetAttributes = {
+					3D1E18C721B6BFB80073A4FC = {
+						LastSwiftMigration = 1010;
+					};
 					6CCBCF95212E6444009DD9AC = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -559,7 +562,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -590,7 +593,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

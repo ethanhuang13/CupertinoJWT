@@ -108,6 +108,7 @@ do {
 ## Contribution
 
 - Feedback and [issues](https://github.com/ethanhuang13/CupertinoJWT/issues/new) are welcome.
+- Submit each pull request for single purpose. Here is a great [article](http://sergeyzhuk.me/2018/12/29/code_review/) about making code review easier.
 
 ## Special Thanks
 

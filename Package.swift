@@ -12,5 +12,5 @@ let package = Package(
      targets: [
 		.target(name: "CupertinoJWT", path:"Sources"),
 	],
-	swiftLanguageVersions: [.v5]
+	swiftLanguageVersions: [.v4_2]
 )

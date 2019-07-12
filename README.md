@@ -167,12 +167,12 @@ do {
         }
     }
     
-    let apnsHeader = APNsHeader(keyID: "JMR5QXHU8X")
+    let apnsHeader = APNsHeader(keyID: keyID)
     let issueDate = Date()
     let iat = Int(issueDate.timeIntervalSince1970.rounded())
     let expireDuration = 20 * 60
     let exp = iat + Int(expireDuration)
-    let apnsPayload = APNsPayload(teamID: "69a6de93-630a-47e3-e053-5b8c7c11a4d1", issueDate: iat, expireDate: exp)
+    let apnsPayload = APNsPayload(teamID: teamID, issueDate: iat, expireDate: exp)
     let jwt = JsonWebToken<APNsHeader, APNsPayload>(header: apnsHeader, payload: apnsPayload)
     
     let jsonEncoder = JSONEncoder()
@@ -247,12 +247,12 @@ do {
         }
     }
     
-    let ascHeader = AppStoreConnectHeader(keyID: "JMR5QXHU8X")
+    let ascHeader = AppStoreConnectHeader(keyID: keyID)
     let issueDate = Date()
     let iat = Int(issueDate.timeIntervalSince1970.rounded())
     let expireDuration = 20 * 60
     let exp = iat + Int(expireDuration)
-    let ascPayload = AppStoreConnectPayload(teamID: "69a6de93-630a-47e3-e053-5b8c7c11a4d1", expireDate: exp)
+    let ascPayload = AppStoreConnectPayload(teamID: teamID, expireDate: exp)
     let jwt = JsonWebToken<AppStoreConnectHeader, AppStoreConnectPayload>(header: ascHeader, payload: ascPayload)
     
     let jsonEncoder = JSONEncoder()

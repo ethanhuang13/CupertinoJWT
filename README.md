@@ -105,6 +105,175 @@ do {
 }
 ```
 
+### APNs Example
+
+This example demonsrates an alternative approach to constructing a JWT for use with APNs.  In this case we are reading the key from a P8 file stored on disk. The path to the key is obtained by reading the ASC_API_KEY_PATH environment variable.  The header and payload are defined in the client code here (no longer inside CupertinoJWT framework).
+
+```swift
+var p8: String? = nil
+
+if let ascApiKeyPath = ProcessInfo.processInfo.environment["ASC_API_KEY_PATH"] {
+    do {
+        let fileURL = URL(fileURLWithPath: ascApiKeyPath)
+        let content = try String(contentsOf: fileURL, encoding: .utf8)
+        p8 = content
+    }
+    catch {
+        /* error handling here */
+        print(error)
+    }
+}
+
+do {
+    struct APNsHeader: Codable {
+        /// alg
+        let algorithm: String = "ES256"
+        
+        /// kid
+        let keyID: String
+        
+        enum CodingKeys: String, CodingKey {
+            case algorithm = "alg"
+            case keyID = "kid"
+        }
+    }
+    
+    struct APNsPayload: Codable {
+        /// iss
+        public let teamID: String
+        
+        /// iat
+        public let issueDate: Int
+        
+        /// exp
+        public let expireDate: Int
+        
+        enum CodingKeys: String, CodingKey {
+            case teamID = "iss"
+            case issueDate = "iat"
+            case expireDate = "exp"
+        }
+        
+        init(teamID: String, issueDate: Date = Date(), expireDuration: Int = 20 * 60) {
+            self.teamID = teamID
+            self.issueDate = Int(issueDate.timeIntervalSince1970.rounded())
+            self.expireDate = self.issueDate + Int(expireDuration)
+        }
+        
+        init(teamID: String, issueDate: Int, expireDate: Int) {
+            self.teamID = teamID
+            self.issueDate = issueDate
+            self.expireDate = expireDate
+        }
+    }
+    
+    let apnsHeader = APNsHeader(keyID: "JMR5QXHU8X")
+    let issueDate = Date()
+    let iat = Int(issueDate.timeIntervalSince1970.rounded())
+    let expireDuration = 20 * 60
+    let exp = iat + Int(expireDuration)
+    let apnsPayload = APNsPayload(teamID: "69a6de93-630a-47e3-e053-5b8c7c11a4d1", issueDate: iat, expireDate: exp)
+    let jwt = JsonWebToken<APNsHeader, APNsPayload>(header: apnsHeader, payload: apnsPayload)
+    
+    let jsonEncoder = JSONEncoder()
+    jsonEncoder.outputFormatting = .prettyPrinted
+    do {
+        let jsonData = try jsonEncoder.encode(jwt)
+        let jsonString = String(data: jsonData, encoding: .utf8)
+        print(jsonString!)
+    }
+    catch {
+        print(error)
+    }
+    
+    let token = try jwt.sign(with: p8!)
+    print(token)
+}
+catch {
+    print(error)
+}
+```
+
+### AppStoreConnect Example
+
+This example demonsrates an alternative approach to constructing a JWT for use with App Store Connect.  In this case we are reading the key from a P8 file stored on disk. The path to the key is obtained by reading the ASC_API_KEY_PATH environment variable.  The header and payload are defined in the client code here (no longer inside CupertinoJWT framework).
+
+```swift
+var p8: String? = nil
+
+if let ascApiKeyPath = ProcessInfo.processInfo.environment["ASC_API_KEY_PATH"] {
+    do {
+        let fileURL = URL(fileURLWithPath: ascApiKeyPath)
+        let content = try String(contentsOf: fileURL, encoding: .utf8)
+        p8 = content
+    }
+    catch {
+        /* error handling here */
+        print(error)
+    }
+}
+do {
+    struct AppStoreConnectHeader: Codable {
+        /// alg
+        let algorithm: String = "ES256"
+        
+        /// kid
+        let keyID: String
+        
+        /// typ
+        let type: String = "JWT"
+        
+        enum CodingKeys: String, CodingKey {
+            case algorithm = "alg"
+            case keyID = "kid"
+            case type = "typ"
+        }
+    }
+    
+    struct AppStoreConnectPayload: Codable {
+        /// iss
+        public let teamID: String
+        
+        /// exp
+        public let expireDate: Int
+        
+        /// aud
+        public let audience: String = "appstoreconnect-v1"
+        
+        enum CodingKeys: String, CodingKey {
+            case teamID = "iss"
+            case expireDate = "exp"
+            case audience = "aud"
+        }
+    }
+    
+    let ascHeader = AppStoreConnectHeader(keyID: "JMR5QXHU8X")
+    let issueDate = Date()
+    let iat = Int(issueDate.timeIntervalSince1970.rounded())
+    let expireDuration = 20 * 60
+    let exp = iat + Int(expireDuration)
+    let ascPayload = AppStoreConnectPayload(teamID: "69a6de93-630a-47e3-e053-5b8c7c11a4d1", expireDate: exp)
+    let jwt = JsonWebToken<AppStoreConnectHeader, AppStoreConnectPayload>(header: ascHeader, payload: ascPayload)
+    
+    let jsonEncoder = JSONEncoder()
+    jsonEncoder.outputFormatting = .prettyPrinted
+    do {
+        let jsonData = try jsonEncoder.encode(jwt)
+        let jsonString = String(data: jsonData, encoding: .utf8)
+        print(jsonString!)
+    }
+    catch {
+        print(error)
+    }
+
+    let token = try jwt.sign(with: p8!)
+    print(token)
+}
+catch {
+    print(error)
+}
+```
+
 ## Contribution
 
 - Feedback and [issues](https://github.com/ethanhuang13/CupertinoJWT/issues/new) are welcome.

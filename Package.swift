@@ -22,7 +22,8 @@ let package = Package(
             path: "Sources"),
         .testTarget(
             name: "CupertinoJWTTests",
-            dependencies: ["CupertinoJWT"]),
+			dependencies: ["CupertinoJWT"],
+			path: "Tests"),
     ],
     swiftLanguageVersions: [.v5]
 )

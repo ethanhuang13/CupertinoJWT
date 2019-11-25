@@ -58,6 +58,10 @@ github "ethanhuang13/CupertinoJWT"
 [Carthage Installation]: https://github.com/Carthage/Carthage#installing-carthage
 [Carthage Usage]: https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
 
+### SPM
+
+When using Xcode 11 you can install `CupertinoJWT` by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Or go to `File` > `Swift Packages` > `Add Package Dependencies...`
+
 ## What's this all about?
 
 Apple has several server APIs uses JSON Web Token([JWT](https://jwt.io)) as authentication method, including [Apple Push Notification service (APNs)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW1), [MusicKit](https://help.apple.com/developer-account/#/devce5522674), [DeviceCheck](https://help.apple.com/developer-account/#/devc3cc013b7) and [App Store Connect API](https://developer.apple.com/videos/play/wwdc2018/303/). Probably more in the future.

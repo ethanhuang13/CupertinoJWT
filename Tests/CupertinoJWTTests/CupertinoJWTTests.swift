@@ -41,4 +41,10 @@ hMdWYrKn
             XCTFail(error.localizedDescription)
         }
     }
+	
+	static var allTests : [(String, (MemoryCacheTests) -> () throws -> Void)] {
+		return [
+			("testJWT", testJWT),
+		]
+	}
 }
